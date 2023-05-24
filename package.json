@@ -12,6 +12,9 @@
     "type": "git",
     "url": "no"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "keywords": [
     "no"
   ],
