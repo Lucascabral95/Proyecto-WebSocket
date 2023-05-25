@@ -45,14 +45,15 @@
 // }
 const socket = io()
 
-let nombre = prompt("¡Hola! ¿Como te llamas?")
+// let nombre = prompt("¡Hola! ¿Como te llamas?")
 
 const input = document.getElementById("escribir")
 const enviar = document.getElementById("enviar")
 const p = document.getElementById("chatParagraph")
 
+
 function mandarMensaje() {
-    const inputResponse = `${nombre}: ${input.value}`
+    const inputResponse = `Cliente: ${input.value}`
     socket.emit("mensaje", inputResponse)
 
     input.value = ""
@@ -72,4 +73,8 @@ enviar.addEventListener("click", event => {
 
 socket.on("update", data => {
     p.innerHTML = data.join("<br>")
+
+    p.scrollIntoView(false)
 })
+
+
