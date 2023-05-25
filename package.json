@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "no"
+    "url": "https://github.com/Lucascabral95/Proyecto-WebSocket"
   },
   "engines": {
     "node": "14.x"
